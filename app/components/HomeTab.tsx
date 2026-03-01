@@ -35,7 +35,7 @@ export default function HomeTab() {
                 }}
             >
                 <p>
-                    I&apos;m a final-year <strong style={{ color: "var(--card-text)" }}>Computer Science</strong> engineer, deeply drawn to the world of{" "}
+                    I&apos;m a final-year <strong style={{ color: "var(--card-text)" }}>Software Engineer</strong>, deeply drawn to the world of{" "}
                     <strong style={{ color: "var(--card-text)" }}>Machine Learning</strong> and{" "}
                     <strong style={{ color: "var(--card-text)" }}>Reinforcement Learning</strong> agents.
                 </p>
