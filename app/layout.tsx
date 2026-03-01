@@ -29,8 +29,8 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Personal portfolio website",
+  title: "Hiro",
+  description: "My little Corner of the Internet",
 };
 
 export default function RootLayout({

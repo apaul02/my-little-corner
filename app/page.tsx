@@ -82,8 +82,8 @@ export default function Home() {
             <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
           </div>
 
-          {/* Tab content — scrollable */}
-          <div className="flex-1 overflow-y-auto pr-1 sm:pr-2">
+          {/* Tab content — scrollable + animated */}
+          <div key={activeTab} className="tab-content flex-1 overflow-y-auto pr-1 sm:pr-2">
             {activeTab === "home" && <HomeTab />}
             {activeTab === "experience" && <ExperienceTab />}
             {activeTab === "projects" && <ProjectsTab />}

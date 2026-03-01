@@ -83,6 +83,23 @@ body {
   transform: scaleX(1);
 }
 
+/* Tab content fade-in animation */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-content {
+  animation: fadeSlideIn 0.4s ease-out forwards !important;
+}
+
 /* Custom scrollbar for card content */
 .overflow-y-auto {
   -webkit-overflow-scrolling: touch;
