@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f0eb;
+  --foreground: #2c2417;
+  --card-bg: #faf8f5;
+  --card-border: #e0d5c7;
+  --card-text: #2c2417;
+  --card-subtext: #5c5041;
+  --btn-bg: #ebe3d8;
+  --btn-hover: #ddd2c3;
+  --overlay-from: rgba(0, 0, 0, 0.35);
+  --overlay-to: rgba(0, 0, 0, 0.15);
+  --accent: #8b3a3a;
+}
+
+.dark {
+  --background: #1a1612;
+  --foreground: #e8dfd4;
+  --card-bg: #272119;
+  --card-border: #3d3429;
+  --card-text: #e8dfd4;
+  --card-subtext: #b8a996;
+  --btn-bg: #3d3429;
+  --btn-hover: #4d4236;
+  --overlay-from: rgba(0, 0, 0, 0.6);
+  --overlay-to: rgba(0, 0, 0, 0.35);
+  --accent: #c97a5a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-serif: var(--font-merriweather);
+  --font-sans: var(--font-merriweather-sans);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-merriweather-sans), Georgia, serif;
+}
+
+/* Smooth theme transitions */
+*,
+*::before,
+*::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Nav link hover: scale + animated underline */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 4px 0;
+  font-family: var(--font-crimson-text), Georgia, serif;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--card-text);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.08);
+  color: var(--card-text) !important;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* Custom scrollbar for card content */
+.overflow-y-auto {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--card-border) transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 2px;
 }
