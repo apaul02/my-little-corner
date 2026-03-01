@@ -33,7 +33,7 @@ export default function FavsTab() {
         },
         {
             title: "Hometown Cha-Cha-Cha",
-            note: "This K-drama just feels like home — even though I'm from India.",
+            note: "This K-drama just feels like home, even though I'm from India.",
         },
     ];
 

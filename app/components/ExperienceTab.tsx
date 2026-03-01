@@ -3,9 +3,12 @@ export default function ExperienceTab() {
         {
             role: "Research Intern",
             org: "Indian Institute of Technology, Kharagpur",
-            period: "June 2025 — August 2025",
-            description:
-                "Worked on Reinforcement Learning research, exploring agent behavior in complex environments. Gained hands-on experience with policy optimization, reward shaping, and simulation frameworks.",
+            period: "June 2025 — October 2025",
+            points: [
+                "Engineered semantic segmentation architectures to extract features from high-res imagery, achieving consistent accuracy gains over baselines.",
+                "Developed a Deep RL framework to optimize sequential decision-making, stabilizing policy convergence in complex, constraint-heavy environments.",
+                "Built a multimodal fusion pipeline integrating visual and numerical embeddings, improving model generalization across diverse test sets.",
+            ],
         },
     ];
 
@@ -47,20 +50,25 @@ export default function ExperienceTab() {
                             </span>
                         </div>
                         <p
-                            className="mb-2 text-sm font-semibold italic"
+                            className="mb-3 text-sm font-semibold italic"
                             style={{ color: "var(--accent)" }}
                         >
                             {exp.org}
                         </p>
-                        <p
-                            className="text-sm leading-relaxed"
-                            style={{
-                                color: "var(--card-subtext)",
-                                fontFamily: "var(--font-libre-baskerville), Georgia, serif",
-                            }}
-                        >
-                            {exp.description}
-                        </p>
+                        <ul className="flex flex-col gap-2 pl-4 list-disc">
+                            {exp.points.map((point, i) => (
+                                <li
+                                    key={i}
+                                    className="text-sm leading-relaxed"
+                                    style={{
+                                        color: "var(--card-subtext)",
+                                        fontFamily: "var(--font-libre-baskerville), Georgia, serif",
+                                    }}
+                                >
+                                    {point}
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 ))}
             </div>

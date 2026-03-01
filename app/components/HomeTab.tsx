@@ -23,10 +23,10 @@ export default function HomeTab() {
                 CS Student · ML Enthusiast · Builder
             </p>
 
-            {/* Divider — accent colored */}
+            {/* Divider */}
             <hr className="mb-5 w-16 border-t-2 sm:mb-8" style={{ borderColor: "var(--accent)" }} />
 
-            {/* Bio — Libre Baskerville for body text, more spacing */}
+            {/* Bio */}
             <div
                 className="flex flex-col gap-4 text-sm leading-[1.8] sm:gap-6 sm:text-base sm:leading-[1.85]"
                 style={{
@@ -42,22 +42,17 @@ export default function HomeTab() {
                 </p>
 
                 <p>
-                    I love coding in general — I enjoy wandering through different corners
-                    of the craft, exploring new ideas and paradigms,{" "}
-                    <em style={{ color: "var(--accent)" }}>until I find the one that feels like home</em>.
+                    I recently completed a{" "}
+                    <strong style={{ color: "var(--card-text)" }}>research internship at IIT Kharagpur</strong>{" "}
+                     working on <strong style={{ color: "var(--card-text)" }}>semantic segmentation</strong>,{" "}
+                    <strong style={{ color: "var(--card-text)" }}>Deep RL</strong> for sequential
+                    decision-making, and{" "}
+                    <strong style={{ color: "var(--card-text)" }}>multimodal fusion</strong> pipelines.
                 </p>
 
                 <p>
                     When I&apos;m not writing code, you&apos;ll find me watching films,
                     binge-reading books, or losing hours in a good video game.
-                </p>
-
-                <p>
-                    Most recently, I completed a{" "}
-                    <strong style={{ color: "var(--card-text)" }}>research internship at IIT Kharagpur</strong>,
-                    where I dived deep into Reinforcement Learning — an experience that
-                    shaped how I think about{" "}
-                    <em>agents, environments, and the art of learning from reward</em>.
                 </p>
             </div>
         </div>

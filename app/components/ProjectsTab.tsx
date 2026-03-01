@@ -5,7 +5,7 @@ export default function ProjectsTab() {
             tech: "Rust · Python · Memory Mapping · PyO3 · HNSW",
             date: "March 2026",
             description:
-                "An out-of-core vector database built in Rust that memory-maps massive ML datasets instead of loading them into RAM — with a custom HNSW index for sub-millisecond nearest-neighbor search and zero-overhead Python bindings via PyO3.",
+                "An vector database built in Rust from scratch that memory-maps massive ML datasets instead of loading them into RAM, with a custom HNSW index for sub-millisecond nearest-neighbor search and zero-overhead Python bindings via PyO3.",
             github: "https://github.com/apaul02/Vector-Database-in-Rust",
         },
         {
@@ -13,7 +13,7 @@ export default function ProjectsTab() {
             tech: "Next.js · TypeScript · PostgreSQL · Drizzle · GCP",
             date: "December 2025",
             description:
-                "A social platform with event-driven image processing — GCP Cloud Functions handle optimization on upload, Canvas API powers real-time filters, and Better Auth keeps sessions secure across Vercel deployments.",
+                "A social platform with event-driven image processing, GCP Cloud Functions handle optimization on upload, Canvas API powers real-time filters, and Better Auth keeps sessions secure across Vercel deployments.",
             github: "https://github.com/apaul02/Retrosnap",
             live: "https://retrosnappy.vercel.app/",
         },
@@ -22,7 +22,7 @@ export default function ProjectsTab() {
             tech: "Python · FastAPI · LangChain · RAG · Llama 3 · Next.js",
             date: "December 2025",
             description:
-                "A RAG-powered NDA auditor that cross-references contract clauses against a vector database of Indian statutes — classifying risk in real time through a FastAPI backend and a context-aware legal chatbot.",
+                "A RAG-powered NDA auditor that cross-references contract clauses against a vector database of Indian statutes classifying risk in real time through a FastAPI backend and a context-aware legal chatbot.",
             github: "https://github.com/justysssss/Vakil.ai",
             live: "https://vakil-legal.vercel.app/",
         },
