@@ -35,7 +35,7 @@ export default function HomeTab() {
                 }}
             >
                 <p>
-                    CS guy obsessed with{" "}
+                    CS student obsessed with{" "}
                     <strong style={{ color: "var(--card-text)" }}>systems</strong>,{" "}
                     <strong style={{ color: "var(--card-text)" }}>low-level engineering</strong>, and{" "}
                     <strong style={{ color: "var(--card-text)" }}>reinforcement learning</strong>.
