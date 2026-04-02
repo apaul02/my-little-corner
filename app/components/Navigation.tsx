@@ -2,15 +2,11 @@
 
 const tabs = [
     { id: "home", label: "Home" },
-    { id: "experience", label: "Experience" },
+    { id: "experience", label: "Work" },
     { id: "projects", label: "Projects" },
-    { id: "books", label: "Books" },
-    { id: "favs", label: "Favs" },
-    { id: "x", label: "X", href: "https://x.com/thehiro02" },
-    { id: "github", label: "GitHub", href: "https://github.com/apaul02" },
 ] as const;
 
-type TabId = "home" | "experience" | "projects" | "books" | "favs";
+type TabId = "home" | "experience" | "projects";
 
 export default function Navigation({
     activeTab,
@@ -21,30 +17,13 @@ export default function Navigation({
 }) {
     return (
         <nav
-            className="flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-[10px] tracking-wide sm:gap-x-4 sm:text-xs sm:flex-nowrap"
+            className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-xs tracking-wide sm:gap-x-5 sm:text-sm sm:flex-nowrap"
             style={{
                 fontFamily: "var(--font-libre-baskerville), Georgia, serif",
-                fontStyle: "italic",
             }}
         >
             {tabs.map((tab) => {
-                const isExternal = "href" in tab && tab.href;
-                const isActive = !isExternal && activeTab === tab.id;
-
-                if (isExternal) {
-                    return (
-                        <a
-                            key={tab.id}
-                            href={tab.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="nav-link"
-                            style={{ color: "var(--card-subtext)" }}
-                        >
-                            {tab.label}
-                        </a>
-                    );
-                }
+                const isActive = activeTab === tab.id;
 
                 return (
                     <button

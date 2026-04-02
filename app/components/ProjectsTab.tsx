@@ -2,27 +2,45 @@ export default function ProjectsTab() {
     const projects = [
         {
             title: "CoreVec",
-            tech: "Rust · Python · Memory Mapping · PyO3 · HNSW",
-            date: "March 2026",
-            description:
-                "An vector database built in Rust from scratch that memory-maps massive ML datasets instead of loading them into RAM, with a custom HNSW index for sub-millisecond nearest-neighbor search and zero-overhead Python bindings via PyO3.",
-            github: "https://github.com/apaul02/Vector-Database-in-Rust",
+            tech: "Rust · PyO3 · HNSW · Memory Mapping",
+
+            description: "A vector database built from scratch in Rust with memory-mapped storage and sub-millisecond nearest-neighbor search.",
+            github: "https://github.com/apaul02/CoreVec",
+        },
+        {
+            title: "IronKV",
+            tech: "Rust · LSM Tree · WAL",
+
+            description: "A persistent key-value store with log-structured merge trees and write-ahead logging.",
+            github: "https://github.com/apaul02/IronKV",
+        },
+        {
+            title: "CoreBox",
+            tech: "Rust · Linux Namespaces · cgroups",
+
+            description: "A container runtime built from scratch using Linux namespaces and cgroups for process isolation.",
+            github: "https://github.com/apaul02/CoreBox",
+        },
+        {
+            title: "ru-shell",
+            tech: "Rust · POSIX · Systems Programming",
+
+            description: "A Unix shell implementation with piping, redirection, and job control.",
+            github: "https://github.com/apaul02/ru-shell",
         },
         {
             title: "Retrosnap",
-            tech: "Next.js · TypeScript · PostgreSQL · Drizzle · GCP",
-            date: "December 2025",
-            description:
-                "A social platform with event-driven image processing, GCP Cloud Functions handle optimization on upload, Canvas API powers real-time filters, and Better Auth keeps sessions secure across Vercel deployments.",
+            tech: "Next.js · TypeScript · PostgreSQL · GCP",
+
+            description: "A social platform with event-driven image processing, real-time filters, and secure auth.",
             github: "https://github.com/apaul02/Retrosnap",
             live: "https://retrosnappy.vercel.app/",
         },
         {
             title: "Vakil AI",
-            tech: "Python · FastAPI · LangChain · RAG · Llama 3 · Next.js",
-            date: "December 2025",
-            description:
-                "A RAG-powered NDA auditor that cross-references contract clauses against a vector database of Indian statutes classifying risk in real time through a FastAPI backend and a context-aware legal chatbot.",
+            tech: "Python · FastAPI · LangChain · RAG · Llama 3",
+
+            description: "A RAG-powered NDA auditor that classifies contract risk against Indian statutes in real time.",
             github: "https://github.com/justysssss/Vakil.ai",
             live: "https://vakil-legal.vercel.app/",
         },
@@ -45,26 +63,15 @@ export default function ProjectsTab() {
             <div className="flex flex-col gap-7">
                 {projects.map((project) => (
                     <div key={project.title}>
-                        <div className="mb-1 flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between">
-                            <h3
-                                className="text-base font-bold"
-                                style={{
-                                    color: "var(--card-text)",
-                                    fontFamily: "var(--font-merriweather), Georgia, serif",
-                                }}
-                            >
-                                {project.title}
-                            </h3>
-                            <span
-                                className="text-xs italic tracking-wide"
-                                style={{
-                                    color: "var(--card-subtext)",
-                                    fontFamily: "var(--font-libre-baskerville), Georgia, serif",
-                                }}
-                            >
-                                {project.date}
-                            </span>
-                        </div>
+                        <h3
+                            className="mb-1 text-base font-bold"
+                            style={{
+                                color: "var(--card-text)",
+                                fontFamily: "var(--font-merriweather), Georgia, serif",
+                            }}
+                        >
+                            {project.title}
+                        </h3>
 
                         <p
                             className="mb-2 text-xs font-semibold uppercase tracking-wider"

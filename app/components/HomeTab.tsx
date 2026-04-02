@@ -9,7 +9,7 @@ export default function HomeTab() {
                     fontFamily: "var(--font-merriweather), Georgia, serif",
                 }}
             >
-                Hi, I&apos;m <span className="italic" style={{ color: "var(--accent)" }}>Hiro</span>
+                Hi, I&apos;m <span className="italic" style={{ color: "var(--accent)" }}>Ankan</span>
             </h1>
 
             {/* Tagline */}
@@ -20,7 +20,7 @@ export default function HomeTab() {
                     fontFamily: "var(--font-crimson-text), Georgia, serif",
                 }}
             >
-                CS Student · ML Enthusiast · Builder
+                Systems · Low-Level Engineering · RL
             </p>
 
             {/* Divider */}
@@ -35,23 +35,40 @@ export default function HomeTab() {
                 }}
             >
                 <p>
-                    I&apos;m a final-year <strong style={{ color: "var(--card-text)" }}>Software Engineer</strong>, deeply drawn to the world of{" "}
-                    <strong style={{ color: "var(--card-text)" }}>Machine Learning</strong> and{" "}
-                    <strong style={{ color: "var(--card-text)" }}>Reinforcement Learning</strong> agents.
+                    CS guy obsessed with{" "}
+                    <strong style={{ color: "var(--card-text)" }}>systems</strong>,{" "}
+                    <strong style={{ color: "var(--card-text)" }}>low-level engineering</strong>, and{" "}
+                    <strong style={{ color: "var(--card-text)" }}>reinforcement learning</strong>.
+                    Recently completed a research internship at{" "}
+                    <a
+                        href="https://www.iitkgp.ac.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="nav-link font-semibold"
+                        style={{ color: "var(--accent)" }}
+                    >
+                        IIT Kharagpur
+                    </a>
+                    , working on <strong style={{ color: "var(--card-text)" }}>RL</strong>-driven research.
                 </p>
 
                 <p>
-                    I recently completed a{" "}
-                    <strong style={{ color: "var(--card-text)" }}>research internship at IIT Kharagpur</strong>{" "}
-                     working on <strong style={{ color: "var(--card-text)" }}>semantic segmentation</strong>,{" "}
-                    <strong style={{ color: "var(--card-text)" }}>Deep RL</strong> for sequential
-                    decision-making, and{" "}
-                    <strong style={{ color: "var(--card-text)" }}>multimodal fusion</strong> pipelines.
+                    I love building things{" "}
+                    <strong style={{ color: "var(--card-text)" }}>from scratch</strong>, a{" "}
+                    <a href="https://github.com/apaul02/CoreVec" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2" style={{ color: "var(--accent)" }}>vector database</a>,{" "}
+                    a{" "}
+                    <a href="https://github.com/apaul02/IronKV" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2" style={{ color: "var(--accent)" }}>key-value store</a>,{" "}
+                    a{" "}
+                    <a href="https://github.com/apaul02/CoreBox" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2" style={{ color: "var(--accent)" }}>container runtime</a>,{" "}
+                    a{" "}
+                    <a href="https://github.com/apaul02/ru-shell" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2" style={{ color: "var(--accent)" }}>shell</a>,{" "}
+                    and{" "}
+                    <a href="https://github.com/apaul02" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2">much more</a>.
                 </p>
 
                 <p>
-                    When I&apos;m not writing code, you&apos;ll find me watching films,
-                    binge-reading books, or losing hours in a good video game.
+                    When I&apos;m not coding, you can catch me watching films,
+                    getting lost in video games, or honestly  just sleeping.
                 </p>
             </div>
         </div>

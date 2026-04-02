@@ -4,11 +4,7 @@ export default function ExperienceTab() {
             role: "Research Intern",
             org: "Indian Institute of Technology, Kharagpur",
             period: "June 2025 — October 2025",
-            points: [
-                "Engineered semantic segmentation architectures to extract features from high-res imagery, achieving consistent accuracy gains over baselines.",
-                "Developed a Deep RL framework to optimize sequential decision-making, stabilizing policy convergence in complex, constraint-heavy environments.",
-                "Built a multimodal fusion pipeline integrating visual and numerical embeddings, improving model generalization across diverse test sets.",
-            ],
+            description: "Did research work with PPO and semantic segmentation models. Currently working on the paper.",
         },
     ];
 
@@ -21,7 +17,7 @@ export default function ExperienceTab() {
                     fontFamily: "var(--font-merriweather), Georgia, serif",
                 }}
             >
-                Experience
+                Work
             </h2>
 
             <hr className="mb-6 w-16 border-t-2" style={{ borderColor: "var(--accent)" }} />
@@ -55,20 +51,15 @@ export default function ExperienceTab() {
                         >
                             {exp.org}
                         </p>
-                        <ul className="flex flex-col gap-2 pl-4 list-disc">
-                            {exp.points.map((point, i) => (
-                                <li
-                                    key={i}
-                                    className="text-sm leading-relaxed"
-                                    style={{
-                                        color: "var(--card-subtext)",
-                                        fontFamily: "var(--font-libre-baskerville), Georgia, serif",
-                                    }}
-                                >
-                                    {point}
-                                </li>
-                            ))}
-                        </ul>
+                        <p
+                            className="text-sm leading-relaxed"
+                            style={{
+                                color: "var(--card-subtext)",
+                                fontFamily: "var(--font-libre-baskerville), Georgia, serif",
+                            }}
+                        >
+                            {exp.description}
+                        </p>
                     </div>
                 ))}
             </div>
