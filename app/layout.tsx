@@ -29,8 +29,12 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Hiro",
+  title: "Ankan Paul",
   description: "My little Corner of the Internet",
+  icons: {
+    icon: '/icon.png'
+  }
+
 };
 
 export default function RootLayout({
