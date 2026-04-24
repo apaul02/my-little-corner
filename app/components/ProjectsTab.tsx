@@ -29,6 +29,13 @@ export default function ProjectsTab() {
             github: "https://github.com/apaul02/ru-shell",
         },
         {
+            title: "RAG.rs",
+            tech: "Rust · Embeddings · Cosine Similarity",
+
+            description: "A custom RAG pipeline built from scratch in Rust for retrieval-augmented generation.",
+            github: "https://github.com/apaul02/RAG.rs",
+        },
+        {
             title: "Retrosnap",
             tech: "Next.js · TypeScript · PostgreSQL · GCP",
 

@@ -62,6 +62,8 @@ export default function HomeTab() {
                     <a href="https://github.com/apaul02/CoreBox" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2" style={{ color: "var(--accent)" }}>container runtime</a>,{" "}
                     a{" "}
                     <a href="https://github.com/apaul02/ru-shell" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2" style={{ color: "var(--accent)" }}>shell</a>,{" "}
+                    a{" "}
+                    <a href="https://github.com/apaul02/RAG.rs" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2" style={{ color: "var(--accent)" }}>RAG pipeline</a>,{" "}
                     and{" "}
                     <a href="https://github.com/apaul02" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 transition-colors duration-200 hover:decoration-2">much more</a>.
                 </p>
